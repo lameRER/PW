@@ -1,0 +1,73 @@
+plantuml
+@startuml
+'package "PW" #DDDDDD {
+    interface War {
+        # Attact()
+    }
+    interface Prist {
+        # Heal()
+    }
+    abstract class Hero {
+        # PlayerName
+        # hp
+        # mana
+        # lvl
+        # max_hp
+        # max_mana
+
+        # Hero()
+
+    }
+
+    abstract class Human{
+
+    }
+
+    abstract Class Elf{
+
+    }
+
+    abstract class Untamed{
+
+    }
+
+    class Blademaster{
+
+    }
+
+    class Wizard{
+
+    }
+
+    class Barbarian{
+
+    }
+
+    class Venomancer{
+
+    }
+
+    class Archer{
+
+    }
+
+    class Cleric{
+
+    }
+
+
+
+    Hero <|-- Human
+    Hero <|-- Elf
+    Hero <|-- Untamed
+    Human <|-- Blademaster
+    Human <|-- Wizard
+    Untamed <|-- Barbarian
+    Untamed <|-- Venomancer
+    Elf <|-- Archer
+    Elf <|-- Cleric
+    Prist <|-- Cleric
+    War <|-- Hero
+
+'}
+@enduml
